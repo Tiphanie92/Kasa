@@ -1,8 +1,7 @@
 .tag {
   background: #ff6068;
   border-radius: 10px;
-  height: 25px;
-  width: 135px;
+  padding: 5px 20px 5px 20px;
   list-style: none;
   font-family: "Montserrat";
   font-style: normal;
@@ -19,19 +18,35 @@
 .background {
   padding: 0;
   display: flex;
+  margin: 0;
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (max-width: 498px) {
   .background {
     position: relative;
     margin-top: 10px;
-    margin-right: 4%;
+    flex-wrap: wrap;
+    display: inline-flex;
+    gap: 5px;
   }
 
   .tag {
     font-size: 10px;
     border-radius: 5px;
+    margin-right: 2px;
+  }
+}
+
+@media screen and (min-width: 498px) and (max-width: 768px) {
+  .background {
+    flex-wrap: wrap;
+    display: inline-flex;
+    gap: 5px;
+    max-width: 60%;
+  }
+  .tag {
+    margin-right: 2px;
   }
 }

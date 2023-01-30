@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import "./datas/data.json";
 
 import Header from "./components/header";
@@ -17,7 +22,8 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route element={<Navigate replace to="/Accueil" />} path="/" />
+        <Route exact path="/Accueil" element={<Home />} />
         <Route path="/A-Propos" element={<About />} />
         <Route path="/Logement/:id" element={<Logement />} />
         <Route path="*" element={<Error />} />
