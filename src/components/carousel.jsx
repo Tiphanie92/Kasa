@@ -34,7 +34,7 @@ function Carousel(json) {
 
         {json.pictures.map((subRowData, k) => (
           <div className={k === current ? "slide active" : "slide"} key={k}>
-            <img src={subRowData} alt="" className="image" />
+            <img src={subRowData} alt="pictures" className="image" />
 
             <span
               className={

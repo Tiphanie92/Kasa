@@ -11,7 +11,7 @@ function Banner(e) {
           <img src={bannerHome} alt="Kasa" className="k-banner__logo" />
           <img
             src={bannerMobileHome}
-            alt=""
+            alt="banniére home"
             className="k-banner__mobile k-banner__logo"
           />
         </div>
@@ -24,7 +24,7 @@ function Banner(e) {
         <img src={bannerAbout} alt="Kasa" className="k-banner__logo" />
         <img
           src={bannerMobileAbout}
-          alt=""
+          alt="banniére about"
           className="k-banners__logo k-banner__mobile"
         />
       </div>
